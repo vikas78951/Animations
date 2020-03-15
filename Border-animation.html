@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-	<title>Title</title>
+	<title>Border Animation</title>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,7 +16,7 @@
 	}
 	.right-line::before{
 		content:"";
-		background-color:black;
+		background-color:red;
 		position:absolute;
 		width:10%;
 		height:3px;
@@ -27,10 +27,10 @@
 	}
 	.right-line::after{
 		content:"";
-		background-color:red;
+		background-color:blue;
 		position:absolute;
 		width:3px;
-		height:10%;
+		height:20%;
 		right:0px;
 		bottom:0px;
 		transition:.3s;
@@ -38,7 +38,7 @@
 	.left-line::before{
 		position:absolute;
 		content:"";
-		background:black;
+		background:blue;
 		width:10%;
 		height:3px;
 		top:0px;
@@ -51,7 +51,7 @@
 		content:"";
 		background:red;
 		width:3px;
-		height:10%;
+		height:25%;
 		top:0px;
 		left:0px;
 		transition:.3s;
@@ -78,46 +78,58 @@
 		<div class="row mx-auto">
 			<div class="col-12">
 				<h3 class="display-4 text-center text-capitalize text-danger">
-					Animation with after and before
+					Animation with Border Effects
 				</h3>
 			</div>
 		</div>
 		<div class="row mx-auto p-5">
+
 			<div class="col-md-3">
-				<div class="pricing-table mt-3 p-3 shadow bg-white" >
+				<div class="pricing-table mt-3 p-3 shadow bg-white d-flex flex-row align-items-center text-uppercase" >
 					<div class="right-line"></div>
 					<div class="left-line"></div>
 					<img src="https://www.znetlive.com/images/crn-excellence-award.jpg" alt="crn excellence award" title="CRN Excellence Award">
-						
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="pricing-table mt-3 p-3 shadow bg-white" >
-					<div class="right-line"></div>
-					<div class="left-line"></div>
-					<img src="https://www.znetlive.com/images/crn-excellence-award.jpg" alt="crn excellence award" title="CRN Excellence Award">
-						
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="pricing-table mt-3 p-3 shadow bg-white" >
-					<div class="right-line"></div>
-					<div class="left-line"></div>
-					<img src="https://www.znetlive.com/images/crn-excellence-award.jpg" alt="crn excellence award" title="CRN Excellence Award">
-						
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="pricing-table mt-3 p-3 shadow bg-white" >
-					<div class="right-line"></div>
-					<div class="left-line"></div>
-					<img src="https://www.znetlive.com/images/crn-excellence-award.jpg" alt="crn excellence award" title="CRN Excellence Award">
+					<div>
+						<h3 class="display-4 text-secondary">hover</h3>
+					</div>
 						
 				</div>
 			</div>
 
+			<div class="col-md-3">
+				<div class="pricing-table mt-3 p-3 shadow bg-white d-flex flex-row align-items-center text-uppercase" >
+					<div class="right-line"></div>
+					<div class="left-line"></div>
+					<img src="https://www.znetlive.com/images/crn-excellence-award.jpg" alt="crn excellence award" title="CRN Excellence Award">
+					<div>
+						<h3 class="display-4 text-secondary">hover</h3>
+					</div>
+						
+				</div>
+			</div>
 
-
+			<div class="col-md-3">
+				<div class="pricing-table mt-3 p-3 shadow bg-white d-flex flex-row align-items-center text-uppercase" >
+					<div class="right-line"></div>
+					<div class="left-line"></div>
+					<img src="https://www.znetlive.com/images/crn-excellence-award.jpg" alt="crn excellence award" title="CRN Excellence Award">
+					<div>
+						<h3 class="display-4 text-secondary">hover</h3>
+					</div>
+						
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="pricing-table mt-3 p-3 shadow bg-white d-flex flex-row align-items-center text-uppercase" >
+					<div class="right-line"></div>
+					<div class="left-line"></div>
+					<img src="https://www.znetlive.com/images/crn-excellence-award.jpg" alt="crn excellence award" title="CRN Excellence Award">
+					<div>
+						<h3 class="display-4 text-secondary">hover</h3>
+					</div>
+						
+				</div>
+			</div>
 
 		</div>
 	</section>	  

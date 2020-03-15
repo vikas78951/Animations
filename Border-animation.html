@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	<title>Title</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- inline styles -->
+	<style>
+	.pricing-table{
+		position: relative;
+
+	}
+	.right-line::before{
+		content:"";
+		background-color:black;
+		position:absolute;
+		width:10%;
+		height:3px;
+		right:0px;
+		bottom:0px;
+		transition:.3s;
+
+	}
+	.right-line::after{
+		content:"";
+		background-color:red;
+		position:absolute;
+		width:3px;
+		height:10%;
+		right:0px;
+		bottom:0px;
+		transition:.3s;
+	}
+	.left-line::before{
+		position:absolute;
+		content:"";
+		background:black;
+		width:10%;
+		height:3px;
+		top:0px;
+		left:0px;
+		transition:.3s;
+
+	}
+	.left-line::after{
+		position:absolute;
+		content:"";
+		background:red;
+		width:3px;
+		height:10%;
+		top:0px;
+		left:0px;
+		transition:.3s;
+
+	}
+	
+	/* animation on hover */
+		.pricing-table:hover .right-line::before ,
+		.pricing-table:hover .left-line::before  {
+			width:100%;
+			transition:.3s cubic-bezier(.95,.05,.8,.04);
+		}
+		.pricing-table:hover .right-line::after ,
+		.pricing-table:hover .left-line::after  {
+			height:100%;
+			transition:.3s cubic-bezier(.95,.05,.8,.04);
+		}
+
+		
+	</style>
+  </head>
+  <body>
+	<section class="d-block h100 bg-light div-container">
+		<div class="row mx-auto">
+			<div class="col-12">
+				<h3 class="display-4 text-center text-capitalize text-danger">
+					Animation with after and before
+				</h3>
+			</div>
+		</div>
+		<div class="row mx-auto p-5">
+			<div class="col-md-3">
+				<div class="pricing-table mt-3 p-3 shadow bg-white" >
+					<div class="right-line"></div>
+					<div class="left-line"></div>
+					<img src="https://www.znetlive.com/images/crn-excellence-award.jpg" alt="crn excellence award" title="CRN Excellence Award">
+						
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="pricing-table mt-3 p-3 shadow bg-white" >
+					<div class="right-line"></div>
+					<div class="left-line"></div>
+					<img src="https://www.znetlive.com/images/crn-excellence-award.jpg" alt="crn excellence award" title="CRN Excellence Award">
+						
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="pricing-table mt-3 p-3 shadow bg-white" >
+					<div class="right-line"></div>
+					<div class="left-line"></div>
+					<img src="https://www.znetlive.com/images/crn-excellence-award.jpg" alt="crn excellence award" title="CRN Excellence Award">
+						
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="pricing-table mt-3 p-3 shadow bg-white" >
+					<div class="right-line"></div>
+					<div class="left-line"></div>
+					<img src="https://www.znetlive.com/images/crn-excellence-award.jpg" alt="crn excellence award" title="CRN Excellence Award">
+						
+				</div>
+			</div>
+
+
+
+
+		</div>
+	</section>	  
+
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
